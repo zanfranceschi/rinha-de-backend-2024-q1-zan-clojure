@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   api01: &api
-    image: zanfranceschi/rinha-2024q1-crebito-clojure:202402192347
+    image: zanfranceschi/rinha-2024q1-crebito-clojure:202402200029
     hostname: api01
     environment:
       - DB_HOSTNAME=db
