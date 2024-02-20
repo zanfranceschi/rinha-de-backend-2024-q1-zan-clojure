@@ -1,0 +1,44 @@
+@port=3000
+
+GET http://localhost:{{port}}/clientes/1/extrato
+
+
+###
+GET http://localhost:{{port}}/clientes/1/extrato
+
+
+###
+POST http://localhost:{{port}}/admin/db-reset
+
+
+###
+POST http://localhost:{{port}}/clientes/1/transacoes
+Content-Type: application/json
+
+{
+  "valor": 1.2,
+  "tipo": "c",
+  "descricao" : "descrição"
+}
+
+
+###
+POST http://localhost:{{port}}/clientes/1/transacoes
+Content-Type: application/json
+
+{
+  "valor": 100000,
+  "tipo": "c",
+  "descricao" : "descrição"
+}
+
+###
+
+POST http://localhost:{{port}}/clientes/1/transacoes
+Content-Type: application/json
+
+{
+  "valor": 1000,
+  "tipo": "c",
+  "descricao" : "pix"
+}
